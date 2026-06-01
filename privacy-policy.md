@@ -1,3 +1,8 @@
+---
+layout: default
+title: Privacy Policy
+---
+
 # Privacy Policy for Smart Frame 24
 
 **Effective Date:** May 29, 2026
