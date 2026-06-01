@@ -1,0 +1,40 @@
+# GitHub Pages / Jekyll configuration for Smart Frame 24
+#
+# This config drives the public site at:
+#     https://blueskyajh-jpg.github.io/premium-frame/
+#
+# Only `index.md` and `privacy-policy.md` are intended to be public.
+# The other files in `docs/` are internal launch notes and MUST NOT be
+# published. They are listed under `exclude:` below.
+
+title: Smart Frame 24
+description: A calm digital photo frame for Android — photos, calendar, clock, weather, and quiet news headlines on one screen.
+theme: jekyll-theme-cayman
+show_downloads: false
+
+# Pretty URLs: privacy-policy.md → /privacy-policy.html (no trailing /)
+permalink: pretty
+
+# Files in `docs/` that must NEVER be published.
+# Each one contains internal launch material (store strategy, data-safety
+# answers, hosting walkthrough) that should not be exposed to the public.
+exclude:
+  - README.md
+  - store-listing.md
+  - data-safety-answers.md
+  - github-pages-setup.md
+  - screenshots/
+  - Gemfile
+  - Gemfile.lock
+  - vendor/
+  - .sass-cache/
+  - .jekyll-cache/
+
+# Default front-matter so each public Markdown page renders with the cayman
+# theme layout without us having to add front-matter blocks per-file.
+defaults:
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: default
